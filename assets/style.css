@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  line-height: 1;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-image: url("https://picsum.photos/1920/1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#setupSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divForm,
+.divFormTwo,
+.divFormThree,
+.divFormFour {
+  height: 50vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.divForm h2,
+.divFormTwo h2,
+.divFormThree h2,
+.divFormFour h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  font-size: 2rem;
+}
+
+.custForm {
+  height: 40%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.custForm input {
+  width: 100%;
+  height: 20%;
+  border: 0 !important;
+  outline: 0 !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.custForm input:focus {
+  border: 0.1rem solid #a6a6a6 !important;
+  outline: 0 !important;
+}
+
+.custForm input:active {
+  border: 0.1rem solid #a6a6a6 !important;
+  outline: 0 !important;
+}
+
+.custForm button {
+  background-color: black;
+  color: #fff;
+  display: block;
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 20%;
+}
+
+.custForm button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.typingEffect {
+  width: 100%;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.visible {
+  display: none;
+}
+
+#mainHome {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+#mainHome header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#welcomeGreetings {
+  font-size: 1.5rem;
+}
+
+#mainHome > h1 {
+  padding: 1rem;
+}
+
+#mainHome > section > div {
+  padding: 1rem;
+}
+
+#mainHome > section > div > h1 {
+  font-size: 4.5rem;
+  margin-top: 3rem;
+}
+
+#mainHome > section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainHome > section > div > ul > li {
+  text-align: right;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  min-width: 14rem;
+  border-bottom: 1px solid white;
+}
+
+#mainHome > section > div:nth-child(2) > ul > li:nth-child(1),
+#mainHome > section > div:nth-child(2) > ul > li:nth-child(2) {
+  justify-content: right;
+  font-size: 1.25rem;
+}
+
+#allLinks {
+  flex-wrap: wrap;
+  justify-content: left !important;
+}
+
+.singleLink {
+  flex: 0 0 150px;
+  min-height: 150px;
+  border-radius: 1rem;
+}
+
+.singleLink a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.singleLink p {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.singleLink:hover,
+.addLink:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.addLink {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 100;
+  opacity: 0.5;
+  border-radius: 1rem;
+}
